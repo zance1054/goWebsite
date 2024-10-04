@@ -42,14 +42,28 @@ I lead teams of developers and DevOps engineers across different regions, ensuri
 		c.HTML(http.StatusOK, "blog_list.html", nil)
 	})
 
+	// Route for experience page
+	router.GET("/about", func(c *gin.Context) {
+		c.HTML(http.StatusOK, "about.html", nil)
+	})
+
+	// Route for about page
+	router.GET("/experience", func(c *gin.Context) {
+		c.HTML(http.StatusOK, "experience.html", nil)
+	})
+
 	// Start the server on port 8080
 	router.Run(":8080")
 
 	// Render individual blog posts
-	router.GET("/blog/*filepath", func(c *gin.Context) {
+	router.GET("/blog_posts/*filepath", func(c *gin.Context) {
 		filepath := c.Param("filepath")
 		c.HTML(http.StatusOK, "blog_post.html", gin.H{
 			"filepath": filepath,
 		})
 	})
+
+	// Start the server on port 8080
+	router.Run(":8080")
+
 }
