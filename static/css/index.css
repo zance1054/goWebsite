@@ -1,0 +1,60 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+    background-color: #36393e; /* Background color for the entire webpage */
+    color: #99aab5; /* Default text color for the paragraph and other texts */
+}
+
+.container {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+}
+
+h1, h2, h3 {
+    margin-top: 20px; /* Add space above the headers */
+}
+
+#header-1 {
+    color: #3248db; /* Color for h1 */
+}
+
+#header-2 {
+    color: #329ddb; /* Color for h2 */
+}
+
+#header-3 {
+    color: #7289da; /* Color for h3 */
+}
+
+p.lead {
+    margin-top: 40px; /* Add space above the paragraph */
+}
+
+.profile-image {
+    width: 256px; /* Width of the image */
+    height: 256px; /* Height of the image */
+    border-radius: 50%; /* Make it circular */
+    object-fit: cover; /* Ensure the image covers the area nicely */
+    border: 2px solid #329ddb; /* Optional: Add a border for better visibility */
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #282b30 !important; /* Background color for the navbar */
+}
+
+/* Text color for navbar links */
+.navbar .nav-link,
+.navbar .navbar-brand {
+    color: #99aab5 !important; /* Text color for navbar links and brand */
+}
+
+/* Change text color on hover */
+.navbar .nav-link:hover,
+.navbar .navbar-brand:hover {
+    color: #f0f0f0; /* Optional: Change text color on hover for better visibility */
+}
+
+/* Specific text color for paragraph to ensure it's visible */
+.lead {
+    color: #99aab5; /* Paragraph text color */
+}
