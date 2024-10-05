@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif; /* Use Roboto font */
-    background-color: #36393e; /* Background color for the entire webpage */
+    background-color: #282b30; /* Background color for the entire webpage */
     color: #99aab5; /* Default text color for the paragraph and other texts */
 }
 
@@ -39,7 +39,7 @@ p.lead {
 
 /* Navbar styles */
 .navbar {
-    background-color: #282b30 !important; /* Background color for the navbar */
+    background-color: #36393e !important; /* Background color for the navbar */
 }
 
 /* Text color for navbar links */
@@ -58,3 +58,80 @@ p.lead {
 .lead {
     color: #99aab5; /* Paragraph text color */
 }
+
+.button-class { /* Replace with your button's actual class name */
+    margin-bottom: 40px; /* Add margin above the button */
+}
+
+/* ------- skills section begins here ------- */
+
+.skills {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Adds spacing between the cards */
+    flex-wrap: wrap; /* Allows wrapping in smaller screens */
+}
+
+.skill-card {
+    background-color: #282b30; /* Card background */
+    color: #99aab5; /* Text color */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    flex: 1 1 30%; /* Makes each card flexible and fit in three columns */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Card shadow for depth */
+    text-align: center;
+}
+
+.skill-card h3 {
+    color: #7289da; /* Title color */
+    margin-bottom: 15px;
+}
+
+.skill-card p {
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .skill-card {
+        flex: 1 1 100%; /* Full width on smaller screens */
+        margin-bottom: 20px; /* Spacing between cards on small screens */
+    }
+}
+
+/*------- connect section begins here -------*/
+
+.connect-section {
+    background-color: #6439FF; /* Background color */
+    padding: 20px 0; /* Padding on top and bottom */
+    color: #99aab5; /* Text color */
+    width: 100%; /* Ensure it extends the full width */
+    position: relative; /* Ensure it takes full width */
+    left: 0; /* Align to the left */
+    margin-bottom: 40px; /* Add margin below the section */
+}
+
+.connect-section h2 {
+    margin-bottom: 20px; /* Space below the heading */
+    color: #99aab5; /* Title color */
+}
+
+.social-icons {
+    display: flex; /* Use flexbox to arrange icons */
+    justify-content: center; /* Center the icons */
+    gap: 20px; /* Space between icons */
+}
+
+.icon-link {
+    text-decoration: none; /* Remove underline */
+}
+
+.icon {
+    width: 40px; /* Icon size */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.2s; /* Animation for hover effect */
+}
+
+.icon:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+

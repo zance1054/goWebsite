@@ -1,0 +1,53 @@
+/* experience.css */
+
+body {
+    font-family: 'Roboto', sans-serif; /* Set font for the body */
+    background-color:  #282b30; 
+    color: #333; 
+}
+
+.container {
+    background-color: #36393e;
+    padding: 20px; 
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.job-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #7289da;
+}
+
+.job-details {
+    margin-left: 20px; /* Indentation for job details */
+}
+
+.job-details h3 {
+    margin: 0; /* Remove margin from company name */
+    font-weight: normal; /* Normal weight for company names */
+    color: #329ddb; /* Secondary color for company names */
+}
+
+.job-details p {
+    margin: 0.5rem 0; /* Space above and below employment dates */
+}
+
+.job-entry ul {
+    list-style-type: disc; /* Display bullet points */
+    margin-left: 40px; /* Indentation for list */
+    padding: 0; /* Remove padding from ul */
+    color: #99aab5; /* Color for bullet point text */
+}
+
+.job-entry {
+    margin-bottom: 2rem; /* Space between entries */
+    padding: 1rem; /* Padding around job entries */
+    border-left: 4px solid #3248db; /* Left border to accent job entries */
+}
+
+.header-1 {
+    color: #2E8B57; /* color for the work experience header and the dates of the entries*/
+}
+
