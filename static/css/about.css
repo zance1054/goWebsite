@@ -1,0 +1,139 @@
+body, html {
+    height: 100%;
+}
+
+.hero-image {
+    background-image: url('/resources/gallery/banner.jpg');
+    height: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+/*------ gallery section here ------*/
+.gallery-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+}
+
+.arrow {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    font-size: 2em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+#currentImage {
+    max-width: 600px; /* Set a maximum width for the displayed image */
+    max-height: 80vh; /* Keep within view height */
+    display: block;
+    margin: auto;
+}
+
+.gallery-overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-overlay img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.gallery-images img {
+    width: 200px; /* Set a fixed width for all images */
+    height: auto; /* Maintain image aspect ratio */
+    margin: 5px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.gallery-images img:hover {
+    transform: scale(1.1);
+}
+
+.gallery-image {
+    width: 500px;
+    height: auto;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    height: auto;
+}
+
+/* button for closing the gallery expanded view */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: white;
+    font-size: 40px; 
+    cursor: pointer;
+    z-index: 2;
+}
+
+.close:hover {
+    color: #ff0000;
+}
+
+/*------ end gallery section here ------*/

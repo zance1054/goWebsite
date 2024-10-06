@@ -1,137 +1,184 @@
 body {
-    font-family: 'Roboto', sans-serif; /* Use Roboto font */
-    background-color: #282b30; /* Background color for the entire webpage */
-    color: #99aab5; /* Default text color for the paragraph and other texts */
+    font-family: 'Roboto', sans-serif;
+    background-color: #282b30;
+    color: #99aab5;
 }
 
 .container {
     display: flex;
-    align-items: flex-start; /* Align items to the top */
+    align-items: flex-start;
 }
 
-h1, h2, h3 {
-    margin-top: 20px; /* Add space above the headers */
+h1, h2, h3, h4 {
+    margin-top: 20px;
 }
 
 #header-1 {
-    color: #3248db; /* Color for h1 */
+    color: #3248db;
 }
 
 #header-2 {
-    color: #329ddb; /* Color for h2 */
+    color: #329ddb;
 }
 
 #header-3 {
-    color: #7289da; /* Color for h3 */
+    color: #7289da;
+    font-style:italic;
+}
+
+#header-4 {
+    color: #2E8B57;
+    font-style:italic;
 }
 
 p.lead {
-    margin-top: 40px; /* Add space above the paragraph */
+    margin-top: 40px;
 }
 
 .profile-image {
-    width: 256px; /* Width of the image */
-    height: 256px; /* Height of the image */
-    border-radius: 50%; /* Make it circular */
-    object-fit: cover; /* Ensure the image covers the area nicely */
-    border: 2px solid #329ddb; /* Optional: Add a border for better visibility */
+    width: 256px;
+    height: 256px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #329ddb;
 }
 
 /* Navbar styles */
 .navbar {
-    background-color: #36393e !important; /* Background color for the navbar */
+    background-color: #36393e !important;
 }
 
-/* Text color for navbar links */
 .navbar .nav-link,
 .navbar .navbar-brand {
-    color: #99aab5 !important; /* Text color for navbar links and brand */
+    color: #99aab5 !important;
 }
 
-/* Change text color on hover */
 .navbar .nav-link:hover,
 .navbar .navbar-brand:hover {
-    color: #f0f0f0; /* Optional: Change text color on hover for better visibility */
+    color: #f0f0f0;
 }
 
-/* Specific text color for paragraph to ensure it's visible */
 .lead {
-    color: #99aab5; /* Paragraph text color */
+    color: #99aab5;
 }
 
-.button-class { /* Replace with your button's actual class name */
-    margin-bottom: 40px; /* Add margin above the button */
+.button-class {
+    margin-bottom: 40px;
+    background-color: #6439FF;
 }
 
-/* ------- skills section begins here ------- */
-
+/*------- SKILLS section begins here -------*/
 .skills {
     display: flex;
     justify-content: space-between;
-    gap: 20px; /* Adds spacing between the cards */
-    flex-wrap: wrap; /* Allows wrapping in smaller screens */
+    flex-wrap: wrap;
 }
 
+
 .skill-card {
-    background-color: #282b30; /* Card background */
-    color: #99aab5; /* Text color */
-    border-radius: 15px; /* Rounded corners */
+    flex: 1;
+    margin: 0 10px;
+    background-color: #329ddb !important;
+    flex-direction: column;
     padding: 20px;
-    flex: 1 1 30%; /* Makes each card flexible and fit in three columns */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Card shadow for depth */
+    border-radius: 10px;
+    width: 30%;
+    height: 340px; /* TODO: If adding more skills may need to adjust. probably need a dynamic solution*/
+    margin-bottom: 20px;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+}
+
+.skill-card h3, .skill-card h4 {
+    color: #ffffff;
     text-align: center;
 }
 
-.skill-card h3 {
-    color: #7289da; /* Title color */
-    margin-bottom: 15px;
+.skill-card h4 {
+    margin-top: 15px;
 }
 
-.skill-card p {
-    font-size: 1rem;
+.tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
 }
 
-@media (max-width: 768px) {
-    .skill-card {
-        flex: 1 1 100%; /* Full width on smaller screens */
-        margin-bottom: 20px; /* Spacing between cards on small screens */
-    }
+.tech-icon:hover {
+    transform: scale(1.1);
 }
+
+.tech-link {
+    position: relative;
+    text-decoration: none;
+}
+
+.tech-link:hover .tech-icon {
+    cursor: pointer;
+}
+
+.tech-icons li {
+    margin: 10px;
+}
+
+.tech-icons img {
+    width: 40px;
+    height: 40px;
+}
+
+.icon-circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #282b30;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.tech-icon {
+    width: 70%;
+    height: auto;
+}
+
 
 /*------- connect section begins here -------*/
 
 .connect-section {
-    background-color: #6439FF; /* Background color */
-    padding: 20px 0; /* Padding on top and bottom */
-    color: #99aab5; /* Text color */
-    width: 100%; /* Ensure it extends the full width */
-    position: relative; /* Ensure it takes full width */
-    left: 0; /* Align to the left */
-    margin-bottom: 40px; /* Add margin below the section */
+    background-color: #6439FF;
+    padding: 20px 0;
+    color: #99aab5;
+    width: 100%;
+    position: relative;
+    left: 0;
+    margin-bottom: 40px;
 }
 
 .connect-section h2 {
-    margin-bottom: 20px; /* Space below the heading */
-    color: #99aab5; /* Title color */
+    margin-bottom: 20px;
+    color: #99aab5;
 }
 
 .social-icons {
-    display: flex; /* Use flexbox to arrange icons */
-    justify-content: center; /* Center the icons */
-    gap: 20px; /* Space between icons */
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .icon-link {
-    text-decoration: none; /* Remove underline */
+    text-decoration: none;
 }
 
 .icon {
-    width: 40px; /* Icon size */
-    height: auto; /* Maintain aspect ratio */
-    transition: transform 0.2s; /* Animation for hover effect */
+    width: 40px;
+    height: auto;
+    transition: transform 0.2s;
 }
 
 .icon:hover {
-    transform: scale(1.1); /* Slight zoom effect on hover */
+    transform: scale(1.1);
 }
 
