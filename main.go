@@ -38,11 +38,6 @@ I lead teams of developers and DevOps engineers across different regions, ensuri
 		})
 	})
 
-	// Route for JSON response
-	router.GET("/json", func(c *gin.Context) {
-		c.JSON(http.StatusOK, gin.H{"message": "Hello, JSON!"})
-	})
-
 	// Route for the blog list page
 	router.GET("/blog", func(c *gin.Context) {
 		c.HTML(http.StatusOK, "blog_list.html", nil)
