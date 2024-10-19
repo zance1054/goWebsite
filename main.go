@@ -15,7 +15,7 @@ func main() {
 	router.Static("/resources", "./resources")
 
 	// Serve blog posts directly, allowing access to the full path
-	router.Static("/blog_posts", "./blog_posts")
+	//router.Static("/blog_posts", "./blog_posts")
 
 	// Serve static files for CSS and JS
 	router.Static("/static", "./static")
@@ -39,20 +39,20 @@ I lead teams of developers and DevOps engineers across different regions, ensuri
 	})
 
 	// Route for the blog list page
-	router.GET("/blog", func(c *gin.Context) {
-		c.HTML(http.StatusOK, "blog_list.html", nil)
-	})
+	//router.GET("/blog", func(c *gin.Context) {
+	//	c.HTML(http.StatusOK, "blog_list.html", nil)
+	//})
 
 	// Route for individual blog posts
-	router.GET("/blog/:year/:month/:filename", func(c *gin.Context) {
-		year := c.Param("year")
-		month := c.Param("month")
-		filename := c.Param("filename")
-		filePath := filepath.Join("blog_posts", year, month, filename)
+	//router.GET("/blog/:year/:month/:filename", func(c *gin.Context) {
+	//	year := c.Param("year")
+	//	month := c.Param("month")
+	//	filename := c.Param("filename")
+	//	filePath := filepath.Join("blog_posts", year, month, filename)
 
-		// Serve the blog post directly as HTML
-		c.HTML(http.StatusOK, filePath, nil)
-	})
+	// Serve the blog post directly as HTML
+	//	c.HTML(http.StatusOK, filePath, nil)
+	//})
 
 	// Route for about page
 	router.GET("/about", func(c *gin.Context) {
