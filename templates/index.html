@@ -53,19 +53,18 @@
         <p class="lead">{{ .description }}</p>
     </div>
 
-    <div class="container mt-3">
-        <a href="/resources/ResumeAFie.pdf" class="btn btn-primary button-class" download="resumeAFielding">Download Resume</a>
-    </div>
-
-    <div class="container mt-3">
-        <h3> Buy Me A Coffee </h3>
-        <a href="https://buymeacoffee.com/alecfielding" class="icon-link">
-            <img src="/resources/contact/buymecoffee.png" alt="buymecoffee" class="icon">
-        </a>
+    <div class="container mt-3 d-flex justify-content-center">
+        <div class="button-group">
+            <a href="/resources/ResumeAFie.pdf" class="btn custom-btn" download="resumeAFielding">Download Resume</a>
+            <a href="https://buymeacoffee.com/alecfielding" class="btn custom-btn">
+                <span>Buy me a coffee</span>
+                <img src="/resources/contact/buymecoffee.png" alt="Coffee icon" class="button-icon">
+            </a>
+        </div>
     </div>
 
     <!-- If adding more items to this section you may need to increase card size in index.css skill section -->
-    <div class="skills container mt-5">
+    <div class="skill-container">
         <!-- Implementation Section -->
         <div class="skill-card">
             <h3>Implementation</h3>
@@ -143,8 +142,8 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://grafana.com/docs/" title="Grafana">
-                        <img src="/resources/icons/grafana.png" alt="Grafana">
+                    <a href="https://grafana.com/docs/" title="Grafana" class="tech-link">
+                        <img src="/resources/icons/grafana.png" alt="Grafana" class="tech-icon">
                     </a>
                 </li>
             </ul>
