@@ -12,6 +12,8 @@ COPY . .
 ENV CGO_ENABLED=0
 ENV GOOS=linux
 ENV GOARCH=amd64
+ENV GIN_MODE=release
+
 
 RUN go build -o main .
 
